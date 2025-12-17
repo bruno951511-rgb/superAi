@@ -22,12 +22,13 @@
       padding: 20px;
     }
     h1 {
-      margin-bottom: 30px;
-      font-size: 2em;
+      margin-bottom: 10px;
+      font-size: 2.5em;
     }
     .subtitle {
       margin-bottom: 30px;
       opacity: 0.9;
+      font-size: 1.1em;
     }
     .ports {
       display: flex;
@@ -45,6 +46,7 @@
       text-decoration: none;
       color: white;
       transition: all 0.3s;
+      cursor: pointer;
     }
     .port-link:hover {
       background: rgba(255, 255, 255, 0.2);
@@ -70,27 +72,46 @@
       word-break: break-all;
     }
   </style>
+  <script>
+    // ✅ BYPASS DA SENHA
+    function bypassTunnel(url) {
+      fetch(url, {
+        method: 'GET',
+        headers: {
+          'bypass-tunnel-reminder': 'true',
+          'User-Agent': 'AI-Suprema-Bot/1.0'
+        },
+        redirect: 'follow'
+      })
+      .then(() => {
+        location.href = url;
+      })
+      .catch(() => {
+        location.href = url;
+      });
+    }
+  </script>
 </head>
 <body>
   <div class="container">
     <h1>🤖 AI Suprema</h1>
-    <p class="subtitle">Inteligência Artificial - Selecione a porta:</p>
+    <p class="subtitle">Inteligência Artificial de Alto Nível<br>Selecione a porta:</p>
     <div class="ports">
       
-      <!-- PORT:3001 -->https://fresh-papers-think.loca.lt
-      <a href="https://fresh-papers-think.loca.lt" class="port-link" data-port="3001">
+      <!-- PORT:3001 -->https://spicy-mole-37.loca.lt
+      <a href="https://spicy-mole-37.loca.lt" class="port-link" data-port="3001" onclick="bypassTunnel('https://spicy-mole-37.loca.lt'); return false;">
         <div class="port-icon">🚀</div>
         <div class="port-info">
           <strong>Porta 3001</strong>
-          <span>https://fresh-papers-think.loca.lt</span>
+          <span>https://spicy-mole-37.loca.lt</span>
         </div>
       </a>
-      <!-- PORT:5173 -->https://nervous-lionfish-18.loca.lt
-      <a href="https://nervous-lionfish-18.loca.lt" class="port-link" data-port="5173">
+      <!-- PORT:5173 -->https://pretty-fireant-42.loca.lt
+      <a href="https://pretty-fireant-42.loca.lt" class="port-link" data-port="5173" onclick="bypassTunnel('https://pretty-fireant-42.loca.lt'); return false;">
         <div class="port-icon">🚀</div>
         <div class="port-info">
           <strong>Porta 5173</strong>
-          <span>https://nervous-lionfish-18.loca.lt</span>
+          <span>https://pretty-fireant-42.loca.lt</span>
         </div>
       </a>
     </div>
