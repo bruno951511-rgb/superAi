@@ -3,8 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="refresh" content="0;url=https://ai-elite-oz1k.loca.lt">
-  <title>Redirecionando - AI Suprema</title>
+  <title>AI Suprema - Selecione a Porta</title>
   <style>
     body {
       margin: 0;
@@ -13,42 +12,88 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      height: 100vh;
+      min-height: 100vh;
       background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
       color: white;
     }
     .container {
       text-align: center;
+      max-width: 600px;
+      padding: 20px;
     }
-    .spinner {
-      border: 4px solid rgba(255,255,255,0.3);
-      border-top: 4px solid white;
-      border-radius: 50%;
-      width: 40px;
-      height: 40px;
-      animation: spin 1s linear infinite;
-      margin: 20px auto;
+    h1 {
+      margin-bottom: 30px;
+      font-size: 2em;
     }
-    @keyframes spin {
-      0% { transform: rotate(0deg); }
-      100% { transform: rotate(360deg); }
+    .subtitle {
+      margin-bottom: 30px;
+      opacity: 0.9;
     }
-    a {
+    .ports {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    .port-link {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.1);
+      border: 2px solid rgba(255, 255, 255, 0.3);
+      border-radius: 10px;
+      text-decoration: none;
       color: white;
-      text-decoration: underline;
+      transition: all 0.3s;
+    }
+    .port-link:hover {
+      background: rgba(255, 255, 255, 0.2);
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    }
+    .port-icon {
+      font-size: 2em;
+    }
+    .port-info {
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+      gap: 5px;
+      flex: 1;
+    }
+    .port-info strong {
+      font-size: 1.2em;
+    }
+    .port-info span {
+      font-size: 0.9em;
+      opacity: 0.8;
+      word-break: break-all;
     }
   </style>
-  <script>
-    location.href = "https://ai-elite-oz1k.loca.lt";
-  </script>
 </head>
 <body>
-  <!-- PORT:5173 -->https://ai-elite-oz1k.loca.lt
   <div class="container">
-    <h1>🤖 AI Suprema - Inteligência Artificial</h1>
-    <div class="spinner"></div>
-    <p>Redirecionando...</p>
-    <p><small>Se não redirecionar, <a href="https://ai-elite-oz1k.loca.lt">clique aqui</a></small></p>
+    <h1>🤖 AI Suprema</h1>
+    <p class="subtitle">Inteligência Artificial - Selecione a porta:</p>
+    <div class="ports">
+      
+      <!-- PORT:3001 -->https://quantum-ai-t0cr.loca.lt
+      <a href="https://quantum-ai-t0cr.loca.lt" class="port-link" data-port="3001">
+        <div class="port-icon">🚀</div>
+        <div class="port-info">
+          <strong>Porta 3001</strong>
+          <span>https://quantum-ai-t0cr.loca.lt</span>
+        </div>
+      </a>
+      <!-- PORT:5173 -->https://ai-elite-oz1k.loca.lt
+      <a href="https://ai-elite-oz1k.loca.lt" class="port-link" data-port="5173">
+        <div class="port-icon">🚀</div>
+        <div class="port-info">
+          <strong>Porta 5173</strong>
+          <span>https://ai-elite-oz1k.loca.lt</span>
+        </div>
+      </a>
+    </div>
   </div>
 </body>
 </html>
