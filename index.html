@@ -1,23 +1,31 @@
-https://omega-ai-2pb8.loca.lt
-https://ai-master-igq2.loca.lt
+https://ai-master-yrm6.loca.lt
+https://ai-core-t1ic.loca.lt
 <!DOCTYPE html><html lang="pt-BR"><head><meta charset="UTF-8"><title>AI Suprema</title>
     <style>
       body { background: #0f172a; color: white; font-family: sans-serif; display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0; }
-      .port-link { background: rgba(255,255,255,0.05); padding: 20px; border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; text-decoration: none; color: white; display: flex; align-items: center; gap: 15px; margin-bottom: 10px; cursor: pointer; }
+      .port-link { background: rgba(255,255,255,0.1); padding: 20px; border-radius: 12px; cursor: pointer; display: flex; gap: 15px; margin-bottom: 10px; border: 1px solid rgba(255,255,255,0.2); transition: 0.2s; }
+      .port-link:hover { background: rgba(255,255,255,0.2); }
     </style>
     <script>
-    async function bypass(url) {
-      try {
-        await fetch(url, { method: 'GET', mode: 'no-cors', headers: { 'bypass-tunnel-reminder': 'true' } });
-      } catch (e) {}
-      window.location.replace(url);
+    function jump(url) {
+        var ifrm = document.createElement("iframe");
+        ifrm.setAttribute("src", url);
+        ifrm.style.width = "0";
+        ifrm.style.height = "0";
+        ifrm.style.border = "none";
+        document.body.appendChild(ifrm);
+        
+        setTimeout(function() {
+            window.location.replace(url);
+        }, 2000); // Espera 2 segundos e redireciona
     }
-  </script></head><body><div class="container"><h1>🤖 AI Suprema</h1><div class="ports">
-        <a href="javascript:void(0)" class="port-link" onclick="bypass('https://omega-ai-2pb8.loca.lt')">
-          <div class="port-icon">🚀</div>
-          <div class="port-info"><strong>Porta 3001</strong><span>https://omega-ai-2pb8.loca.lt</span></div>
-        </a>
-        <a href="javascript:void(0)" class="port-link" onclick="bypass('https://ai-master-igq2.loca.lt')">
-          <div class="port-icon">🚀</div>
-          <div class="port-info"><strong>Porta 5173</strong><span>https://ai-master-igq2.loca.lt</span></div>
-        </a></div></div></body></html>
+  </script></head>
+    <body><div class="container"><h1>🤖 AI Suprema</h1><div class="ports">
+      <div onclick="jump('https://ai-master-yrm6.loca.lt')" class="port-link">
+        <div class="port-icon">🚀</div>
+        <div class="port-info"><strong>Porta 3001</strong><span>https://ai-master-yrm6.loca.lt</span></div>
+      </div>
+      <div onclick="jump('https://ai-core-t1ic.loca.lt')" class="port-link">
+        <div class="port-icon">🚀</div>
+        <div class="port-info"><strong>Porta 5173</strong><span>https://ai-core-t1ic.loca.lt</span></div>
+      </div></div></div></body></html>
